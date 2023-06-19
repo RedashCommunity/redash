@@ -1,10 +1,10 @@
 Flask==1.1.1
 Jinja2==2.10.3
 itsdangerous==1.1.0
-click==6.7
+click==8.0
 MarkupSafe==1.1.1
 pyOpenSSL==19.0.0
-httplib2==0.14.0
+httplib2>=0.14.0,<=0.15.0
 wtforms==2.2.1
 Flask-RESTful==0.3.7
 Flask-Login==0.4.1
@@ -18,7 +18,7 @@ passlib==1.7.1
 aniso8601==8.0.0
 blinker==1.4
 psycopg2==2.8.3
-python-dateutil==2.8.0
+python-dateutil==2.8.2
 pytz>=2019.3
 PyYAML==5.4
 redis==4.4.4
@@ -29,7 +29,7 @@ SQLAlchemy-Searchable==0.10.6
 # We need to pin the version of pyparsing, as newer versions break SQLAlchemy-Searchable-10.0.6 (newer versions no longer depend on it)
 pyparsing==2.3.0
 SQLAlchemy-Utils==0.34.2
-sqlparse==0.3.0
+sqlparse>=0.3.0,<=0.4.2
 statsd==3.3.0
 greenlet==0.4.16
 gunicorn==20.0.4
