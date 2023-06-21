@@ -36,7 +36,6 @@ def setup_logging():
         for name in [
             "passlib",
             "requests.packages.urllib3",
-            "snowflake.connector",
             "apiclient",
         ]:
             logging.getLogger(name).setLevel("ERROR")
