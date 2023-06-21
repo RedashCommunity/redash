@@ -9,7 +9,7 @@ export function cleanNumber(value: any) {
 
 export function getSeriesAxis(series: any, options: any) {
   const seriesOptions = options.seriesOptions[series.name] || { type: options.globalSeriesType };
-  if (seriesOptions.yAxis === 1 && (!options.series.stacking || seriesOptions.type === "line")) {
+  if (seriesOptions.yAxis === 1 && (!options.series.stacking || ["line", "column", "area", "scatter", "bubble", "box"].includes(seriesOptions.type))) {
     return "y2";
   }
   return "y";
