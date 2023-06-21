@@ -10,7 +10,8 @@ pymongo[tls,srv]==4.3.3
 vertica-python==0.9.5
 td-client==1.0.0
 pymssql==2.1.5
-dql==0.6.2
+# We can't upgrade dql==0.5.26 version as dql==0.6.2 newer versions require PostgreSQL > 10, but we target older versions at the moment.
+dql==0.5.26
 dynamo3==1.0.0
 boto3>=1.14.0,<1.15.0
 botocore>=1.13,<=1.17.55
