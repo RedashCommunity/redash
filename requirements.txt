@@ -57,7 +57,7 @@ gevent==20.4.0
 sshtunnel==0.1.5
 supervisor==4.1.0
 supervisor_checks==0.8.1
-werkzeug==0.16.1
+werkzeug==2.2.3
 # Uncomment the requirement for ldap3 if using ldap.
 # It is not included by default because of the GPL license conflict.
 # ldap3==2.2.4
